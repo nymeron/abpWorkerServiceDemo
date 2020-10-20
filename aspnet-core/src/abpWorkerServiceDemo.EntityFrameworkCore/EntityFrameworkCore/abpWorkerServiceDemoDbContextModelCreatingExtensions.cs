@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using abpWorkerServiceDemo.Demo;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace abpWorkerServiceDemo.EntityFrameworkCore
 {
@@ -11,12 +13,12 @@ namespace abpWorkerServiceDemo.EntityFrameworkCore
 
             /* Configure your own tables/entities inside here */
 
-            //builder.Entity<YourEntity>(b =>
-            //{
-            //    b.ToTable(abpWorkerServiceDemoConsts.DbTablePrefix + "YourEntities", abpWorkerServiceDemoConsts.DbSchema);
-            //    b.ConfigureByConvention(); //auto configure for the base class props
-            //    //...
-            //});
+            builder.Entity<DemoEntity>(b =>
+            {
+                b.ToTable(abpWorkerServiceDemoConsts.DbTablePrefix + "DemoEntities", abpWorkerServiceDemoConsts.DbSchema);
+                b.ConfigureByConvention(); //auto configure for the base class props
+                //...
+            });
         }
     }
 }

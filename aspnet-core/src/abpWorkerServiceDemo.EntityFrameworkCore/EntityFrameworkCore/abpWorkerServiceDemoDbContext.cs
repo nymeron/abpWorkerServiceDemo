@@ -5,6 +5,7 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
 using Volo.Abp.Users.EntityFrameworkCore;
+using abpWorkerServiceDemo.Demo;
 
 namespace abpWorkerServiceDemo.EntityFrameworkCore
 {
@@ -22,9 +23,12 @@ namespace abpWorkerServiceDemo.EntityFrameworkCore
     {
         public DbSet<AppUser> Users { get; set; }
 
+
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside abpWorkerServiceDemoDbContextModelCreatingExtensions.ConfigureabpWorkerServiceDemo
          */
+
+        public DbSet<DemoEntity> DemoEntities { get; set; }
 
         public abpWorkerServiceDemoDbContext(DbContextOptions<abpWorkerServiceDemoDbContext> options)
             : base(options)

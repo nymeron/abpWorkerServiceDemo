@@ -1,0 +1,1010 @@
+2020-10-20 21:09:34.519 +02:00 [INF] Start of worker service
+2020-10-20 21:09:36.045 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 21:09:36.046 +02:00 [INF] Hosting environment: Development
+2020-10-20 21:09:36.047 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 21:11:28.895 +02:00 [INF] Start of worker service
+2020-10-20 21:11:35.365 +02:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-20 21:11:35.414 +02:00 [INF] Initialization ...
+2020-10-20 21:11:35.420 +02:00 [INF] Loaded ABP modules:
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-20 21:11:35.420 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-20 21:11:35.420 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServcieAppModule
+2020-10-20 21:11:35.692 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 21:11:35.692 +02:00 [INF] Worker running at: "2020-10-20T21:11:35.6929027+02:00"
+2020-10-20 21:11:35.693 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 21:11:35.693 +02:00 [INF] Hosting environment: Development
+2020-10-20 21:11:35.693 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 21:11:36.701 +02:00 [INF] Worker running at: "2020-10-20T21:11:36.7010307+02:00"
+2020-10-20 21:11:37.703 +02:00 [INF] Worker running at: "2020-10-20T21:11:37.7035232+02:00"
+2020-10-20 21:11:38.706 +02:00 [INF] Worker running at: "2020-10-20T21:11:38.7066344+02:00"
+2020-10-20 21:11:39.714 +02:00 [INF] Worker running at: "2020-10-20T21:11:39.7145652+02:00"
+2020-10-20 21:11:40.711 +02:00 [ERR] An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Volo.Abp.BackgroundJobs.BackgroundJobStore' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.BackgroundJobs.IBackgroundJobRepository backgroundJobRepository' of constructor 'Void .ctor(Volo.Abp.BackgroundJobs.IBackgroundJobRepository, Volo.Abp.ObjectMapping.IObjectMapper`1[Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-10-20 21:11:40.713 +02:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.BackgroundJobs.BackgroundJobStore
+
+2020-10-20 21:11:40.731 +02:00 [INF] Worker running at: "2020-10-20T21:11:40.7317142+02:00"
+2020-10-20 21:11:41.734 +02:00 [INF] Worker running at: "2020-10-20T21:11:41.7346321+02:00"
+2020-10-20 21:11:42.745 +02:00 [INF] Worker running at: "2020-10-20T21:11:42.7455864+02:00"
+2020-10-20 21:11:43.747 +02:00 [INF] Worker running at: "2020-10-20T21:11:43.7476916+02:00"
+2020-10-20 21:11:44.758 +02:00 [INF] Worker running at: "2020-10-20T21:11:44.7587306+02:00"
+2020-10-20 21:11:45.717 +02:00 [ERR] An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Volo.Abp.BackgroundJobs.BackgroundJobStore' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.BackgroundJobs.IBackgroundJobRepository backgroundJobRepository' of constructor 'Void .ctor(Volo.Abp.BackgroundJobs.IBackgroundJobRepository, Volo.Abp.ObjectMapping.IObjectMapper`1[Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-10-20 21:11:45.717 +02:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.BackgroundJobs.BackgroundJobStore
+
+2020-10-20 21:11:45.762 +02:00 [INF] Worker running at: "2020-10-20T21:11:45.7625608+02:00"
+2020-10-20 21:11:46.777 +02:00 [INF] Worker running at: "2020-10-20T21:11:46.7770388+02:00"
+2020-10-20 21:11:47.786 +02:00 [INF] Worker running at: "2020-10-20T21:11:47.7867778+02:00"
+2020-10-20 21:11:48.791 +02:00 [INF] Worker running at: "2020-10-20T21:11:48.7914896+02:00"
+2020-10-20 21:11:49.794 +02:00 [INF] Worker running at: "2020-10-20T21:11:49.7944052+02:00"
+2020-10-20 21:11:50.725 +02:00 [ERR] An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Volo.Abp.BackgroundJobs.BackgroundJobStore' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.BackgroundJobs.IBackgroundJobRepository backgroundJobRepository' of constructor 'Void .ctor(Volo.Abp.BackgroundJobs.IBackgroundJobRepository, Volo.Abp.ObjectMapping.IObjectMapper`1[Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-10-20 21:11:50.725 +02:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.BackgroundJobs.BackgroundJobStore
+
+2020-10-20 21:11:50.817 +02:00 [INF] Worker running at: "2020-10-20T21:11:50.8170832+02:00"
+2020-10-20 21:11:51.824 +02:00 [INF] Worker running at: "2020-10-20T21:11:51.8242357+02:00"
+2020-10-20 21:11:52.837 +02:00 [INF] Worker running at: "2020-10-20T21:11:52.8375962+02:00"
+2020-10-20 21:11:53.850 +02:00 [INF] Worker running at: "2020-10-20T21:11:53.8508913+02:00"
+2020-10-20 21:11:54.855 +02:00 [INF] Worker running at: "2020-10-20T21:11:54.8558070+02:00"
+2020-10-20 21:11:55.735 +02:00 [ERR] An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Volo.Abp.BackgroundJobs.BackgroundJobStore' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.BackgroundJobs.IBackgroundJobRepository backgroundJobRepository' of constructor 'Void .ctor(Volo.Abp.BackgroundJobs.IBackgroundJobRepository, Volo.Abp.ObjectMapping.IObjectMapper`1[Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-10-20 21:11:55.735 +02:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.BackgroundJobs.BackgroundJobStore
+
+2020-10-20 21:11:55.873 +02:00 [INF] Worker running at: "2020-10-20T21:11:55.8734262+02:00"
+2020-10-20 21:11:56.888 +02:00 [INF] Worker running at: "2020-10-20T21:11:56.8879849+02:00"
+2020-10-20 21:11:57.889 +02:00 [INF] Worker running at: "2020-10-20T21:11:57.8894448+02:00"
+2020-10-20 21:11:58.895 +02:00 [INF] Worker running at: "2020-10-20T21:11:58.8956172+02:00"
+2020-10-20 21:11:59.908 +02:00 [INF] Worker running at: "2020-10-20T21:11:59.9086387+02:00"
+2020-10-20 21:12:00.758 +02:00 [ERR] An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Abp.BackgroundJobs.BackgroundJobStore.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'Volo.Abp.BackgroundJobs.BackgroundJobStore' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.BackgroundJobs.IBackgroundJobRepository backgroundJobRepository' of constructor 'Void .ctor(Volo.Abp.BackgroundJobs.IBackgroundJobRepository, Volo.Abp.ObjectMapping.IObjectMapper`1[Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Volo.Abp.BackgroundJobs.BackgroundJobWorker.DoWorkAsync(PeriodicBackgroundWorkerContext workerContext)
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.<>c__DisplayClass15_0.<Run>b__0(Task t)
+   at System.Threading.Tasks.ContinuationTaskFromTask.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Nito.AsyncEx.Synchronous.TaskExtensions.WaitAndUnwrapException(Task task)
+   at Nito.AsyncEx.AsyncContext.Run(Func`1 action)
+   at Volo.Abp.Threading.AsyncHelper.RunSync(Func`1 action)
+   at Volo.Abp.BackgroundWorkers.AsyncPeriodicBackgroundWorkerBase.Timer_Elapsed(Object sender, EventArgs e)
+2020-10-20 21:12:00.758 +02:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Abp.BackgroundJobs.BackgroundJobStore
+
+2020-10-20 21:12:00.930 +02:00 [INF] Worker running at: "2020-10-20T21:12:00.9302857+02:00"
+2020-10-20 21:12:01.936 +02:00 [INF] Worker running at: "2020-10-20T21:12:01.9360024+02:00"
+2020-10-20 21:12:02.673 +02:00 [INF] Application is shutting down...
+2020-10-20 21:12:02.676 +02:00 [INF] Shutdown...
+2020-10-20 21:18:59.875 +02:00 [INF] Start of worker service
+2020-10-20 21:19:05.179 +02:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-20 21:19:05.221 +02:00 [INF] Initialization ...
+2020-10-20 21:19:05.226 +02:00 [INF] Loaded ABP modules:
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-20 21:19:05.226 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-20 21:19:05.226 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServcieAppModule
+2020-10-20 21:19:05.472 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 21:19:05.504 +02:00 [FTL] Host terminated unexpectedly
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating abpWorkerServiceDemo.WorkerService.Worker -> abpWorkerServiceDemo.Demo.DemoService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'abpWorkerServiceDemo.Demo.DemoService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.Domain.Repositories.IRepository`2[abpWorkerServiceDemo.Users.AppUser,System.Guid] appUserRepository' of constructor 'Void .ctor(Volo.Abp.Domain.Repositories.IRepository`2[abpWorkerServiceDemo.Users.AppUser,System.Guid])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at abpWorkerServiceDemo.WorkerService.WorkerServiceAppStart.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\WorkerServiceAppStart.cs:line 50
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at abpWorkerServiceDemo.WorkerService.Program.Main(String[] args) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Program.cs:line 30
+2020-10-20 21:19:10.824 +02:00 [INF] Start of worker service
+2020-10-20 21:19:12.087 +02:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-20 21:19:12.130 +02:00 [INF] Initialization ...
+2020-10-20 21:19:12.136 +02:00 [INF] Loaded ABP modules:
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-20 21:19:12.136 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-20 21:19:12.136 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServcieAppModule
+2020-10-20 21:19:12.383 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 21:19:12.413 +02:00 [FTL] Host terminated unexpectedly
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating abpWorkerServiceDemo.WorkerService.Worker -> abpWorkerServiceDemo.Demo.DemoService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'abpWorkerServiceDemo.Demo.DemoService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.Domain.Repositories.IRepository`2[abpWorkerServiceDemo.Users.AppUser,System.Guid] appUserRepository' of constructor 'Void .ctor(Volo.Abp.Domain.Repositories.IRepository`2[abpWorkerServiceDemo.Users.AppUser,System.Guid])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at abpWorkerServiceDemo.WorkerService.WorkerServiceAppStart.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\WorkerServiceAppStart.cs:line 50
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at abpWorkerServiceDemo.WorkerService.Program.Main(String[] args) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Program.cs:line 30
+2020-10-20 21:29:53.475 +02:00 [INF] Start of worker service
+2020-10-20 21:29:54.842 +02:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-20 21:29:54.886 +02:00 [INF] Initialization ...
+2020-10-20 21:29:54.892 +02:00 [INF] Loaded ABP modules:
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-20 21:29:54.892 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-20 21:29:54.892 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServcieAppModule
+2020-10-20 21:29:55.136 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 21:29:55.167 +02:00 [FTL] Host terminated unexpectedly
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating abpWorkerServiceDemo.WorkerService.Worker -> abpWorkerServiceDemo.Demo.DemoService.
+ ---> Autofac.Core.DependencyResolutionException: None of the constructors found with 'Autofac.Core.Activators.Reflection.DefaultConstructorFinder' on type 'abpWorkerServiceDemo.Demo.DemoService' can be invoked with the available services and parameters:
+Cannot resolve parameter 'Volo.Abp.Domain.Repositories.IRepository`2[abpWorkerServiceDemo.Demo.DemoEntity,System.Guid] demoEntitiesRepository' of constructor 'Void .ctor(Volo.Abp.Domain.Repositories.IRepository`2[abpWorkerServiceDemo.Demo.DemoEntity,System.Guid])'.
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.GetValidConstructorBindings(ConstructorInfo[] availableConstructors, IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.InstanceLookup.CreateInstance(IEnumerable`1 parameters)
+   at Autofac.Core.Resolving.InstanceLookup.Execute()
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ResolveComponent(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at abpWorkerServiceDemo.WorkerService.WorkerServiceAppStart.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\WorkerServiceAppStart.cs:line 50
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at abpWorkerServiceDemo.WorkerService.Program.Main(String[] args) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Program.cs:line 30
+2020-10-20 21:32:50.980 +02:00 [INF] Start of worker service
+2020-10-20 21:34:59.002 +02:00 [INF] Start of worker service
+2020-10-20 21:36:11.891 +02:00 [INF] Start of worker service
+2020-10-20 21:38:41.939 +02:00 [INF] Start of worker service
+2020-10-20 21:40:11.221 +02:00 [INF] Start of worker service
+2020-10-20 21:40:41.785 +02:00 [FTL] Host terminated unexpectedly
+System.InvalidOperationException: Could not find singleton service: Volo.Abp.Modularity.IModuleContainer, Volo.Abp.Core, Version=3.2.1.0, Culture=neutral, PublicKeyToken=null
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionCommonExtensions.GetSingletonInstance[T](IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Register(ContainerBuilder builder, IServiceCollection services)
+   at Autofac.Extensions.DependencyInjection.AutofacRegistration.Populate(ContainerBuilder builder, IServiceCollection services)
+   at Volo.Abp.Autofac.AbpAutofacServiceProviderFactory.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateBuilder(IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at abpWorkerServiceDemo.WorkerService.Program.Main(String[] args) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Program.cs:line 30
+2020-10-20 21:47:03.007 +02:00 [INF] Start of worker service
+2020-10-20 21:55:11.667 +02:00 [INF] Start of worker service
+2020-10-20 21:56:54.538 +02:00 [INF] Start of worker service
+2020-10-20 21:58:42.760 +02:00 [INF] Initialization ...
+2020-10-20 21:58:43.248 +02:00 [INF] Loaded ABP modules:
+2020-10-20 21:58:43.248 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-20 21:58:43.248 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 21:58:46.012 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 21:58:46.013 +02:00 [INF] Hosting environment: Development
+2020-10-20 21:58:46.013 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 21:59:55.167 +02:00 [INF] Application is shutting down...
+2020-10-20 22:00:00.594 +02:00 [INF] Shutdown...
+2020-10-20 22:00:09.191 +02:00 [FTL] Host terminated unexpectedly
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.Extensions.Hosting.Internal.Host.StopAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.WaitForShutdownAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at abpWorkerServiceDemo.WorkerService.Program.Main(String[] args) in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Program.cs:line 29
+2020-10-20 22:01:02.905 +02:00 [INF] Start of worker service
+2020-10-20 22:01:07.240 +02:00 [INF] Initialization ...
+2020-10-20 22:01:07.247 +02:00 [INF] Loaded ABP modules:
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 22:01:07.247 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-20 22:01:07.247 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 22:01:08.391 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 22:01:08.391 +02:00 [INF] Hosting environment: Development
+2020-10-20 22:01:08.391 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 22:02:41.689 +02:00 [INF] Application is shutting down...
+2020-10-20 22:02:43.619 +02:00 [INF] Shutdown...
+2020-10-20 22:03:24.343 +02:00 [INF] Start of worker service
+2020-10-20 22:03:31.035 +02:00 [INF] Initialization ...
+2020-10-20 22:03:31.043 +02:00 [INF] Loaded ABP modules:
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 22:03:31.043 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 22:03:31.044 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-20 22:03:31.044 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 22:03:31.047 +02:00 [INF] Worker running at: "2020-10-20T22:03:31.0468865+02:00"
+2020-10-20 22:03:33.099 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 22:03:33.099 +02:00 [INF] Hosting environment: Development
+2020-10-20 22:03:33.099 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 22:03:38.111 +02:00 [INF] Worker running at: "2020-10-20T22:03:38.1113508+02:00"
+2020-10-20 22:03:44.640 +02:00 [INF] Worker running at: "2020-10-20T22:03:44.6403914+02:00"
+2020-10-20 22:03:49.647 +02:00 [INF] Worker running at: "2020-10-20T22:03:49.6470208+02:00"
+2020-10-20 22:03:54.658 +02:00 [INF] Worker running at: "2020-10-20T22:03:54.6582157+02:00"
+2020-10-20 22:03:59.665 +02:00 [INF] Worker running at: "2020-10-20T22:03:59.6650034+02:00"
+2020-10-20 22:04:04.670 +02:00 [INF] Worker running at: "2020-10-20T22:04:04.6702423+02:00"
+2020-10-20 22:04:09.677 +02:00 [INF] Worker running at: "2020-10-20T22:04:09.6772502+02:00"
+2020-10-20 22:04:14.685 +02:00 [INF] Worker running at: "2020-10-20T22:04:14.6856322+02:00"
+2020-10-20 22:04:19.689 +02:00 [INF] Worker running at: "2020-10-20T22:04:19.6892267+02:00"
+2020-10-20 22:04:20.782 +02:00 [INF] Application is shutting down...
+2020-10-20 22:04:24.918 +02:00 [INF] Shutdown...
+2020-10-20 22:04:24.919 +02:00 [INF] Worker running at: "2020-10-20T22:04:24.9192516+02:00"
+2020-10-20 22:04:59.982 +02:00 [INF] Start of worker service
+2020-10-20 22:05:03.374 +02:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-20 22:05:03.415 +02:00 [INF] Initialization ...
+2020-10-20 22:05:03.424 +02:00 [INF] Loaded ABP modules:
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-20 22:05:03.425 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - abpWorkerServiceDemo.EntityFrameworkCore.abpWorkerServiceDemoEntityFrameworkCoreModule
+2020-10-20 22:05:03.425 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-20 22:05:03.699 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 22:05:03.700 +02:00 [INF] Worker running at: "2020-10-20T22:05:03.7002330+02:00"
+2020-10-20 22:05:03.701 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 22:05:03.701 +02:00 [INF] Hosting environment: Development
+2020-10-20 22:05:03.701 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 22:05:08.729 +02:00 [INF] Worker running at: "2020-10-20T22:05:08.7289961+02:00"
+2020-10-20 22:05:09.355 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:05:09.800 +02:00 [INF] Executed DbCommand (46ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:05:13.748 +02:00 [INF] Worker running at: "2020-10-20T22:05:13.7483294+02:00"
+2020-10-20 22:05:14.864 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:05:14.871 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:05:18.759 +02:00 [INF] Worker running at: "2020-10-20T22:05:18.7588416+02:00"
+2020-10-20 22:05:19.898 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:05:19.900 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:05:23.769 +02:00 [INF] Worker running at: "2020-10-20T22:05:23.7696375+02:00"
+2020-10-20 22:05:24.923 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:05:24.925 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:05:28.780 +02:00 [INF] Worker running at: "2020-10-20T22:05:28.7801492+02:00"
+2020-10-20 22:05:29.929 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:05:29.932 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:05:33.790 +02:00 [INF] Worker running at: "2020-10-20T22:05:33.7900509+02:00"
+2020-10-20 22:05:34.585 +02:00 [INF] Application is shutting down...
+2020-10-20 22:05:34.587 +02:00 [INF] Shutdown...
+2020-10-20 22:06:12.596 +02:00 [INF] Start of worker service
+2020-10-20 22:06:15.200 +02:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-20 22:06:15.242 +02:00 [INF] Initialization ...
+2020-10-20 22:06:15.252 +02:00 [INF] Loaded ABP modules:
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-20 22:06:15.252 +02:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2020-10-20 22:06:15.252 +02:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-10-20 22:06:15.253 +02:00 [INF] - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2020-10-20 22:06:15.253 +02:00 [INF] - abpWorkerServiceDemo.EntityFrameworkCore.abpWorkerServiceDemoEntityFrameworkCoreModule
+2020-10-20 22:06:15.253 +02:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-20 22:06:15.496 +02:00 [INF] Initialized all ABP modules.
+2020-10-20 22:06:19.527 +02:00 [INF] Worker running at: "2020-10-20T22:06:19.5275133+02:00"
+2020-10-20 22:06:23.077 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:23.095 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:23.305 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-20 22:06:23.305 +02:00 [INF] Hosting environment: Development
+2020-10-20 22:06:23.305 +02:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-20 22:06:23.408 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-20 22:06:23.420 +02:00 [INF] Executed DbCommand (36ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:06:30.596 +02:00 [INF] Worker running at: "2020-10-20T22:06:30.5965948+02:00"
+2020-10-20 22:06:30.620 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:30.620 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:30.625 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-20 22:06:30.625 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:06:35.644 +02:00 [INF] Worker running at: "2020-10-20T22:06:35.6439121+02:00"
+2020-10-20 22:06:35.649 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:35.649 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:35.656 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-20 22:06:39.973 +02:00 [INF] Executed DbCommand (4,316ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:06:44.987 +02:00 [INF] Worker running at: "2020-10-20T22:06:44.9875715+02:00"
+2020-10-20 22:06:44.995 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:44.995 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:44.999 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-20 22:06:45.000 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:06:50.015 +02:00 [INF] Worker running at: "2020-10-20T22:06:50.0156792+02:00"
+2020-10-20 22:06:50.017 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:50.017 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:50.020 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-20 22:06:50.020 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:06:57.798 +02:00 [INF] Worker running at: "2020-10-20T22:06:57.7988367+02:00"
+2020-10-20 22:06:57.800 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:57.800 +02:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-20 22:06:57.803 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-20 22:06:57.805 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-20 22:06:58.518 +02:00 [INF] Application is shutting down...
+2020-10-20 22:06:58.520 +02:00 [INF] Shutdown...

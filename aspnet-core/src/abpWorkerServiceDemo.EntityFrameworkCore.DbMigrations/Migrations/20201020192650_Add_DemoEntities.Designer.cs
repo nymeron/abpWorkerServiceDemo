@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 using abpWorkerServiceDemo.EntityFrameworkCore;
@@ -10,9 +11,10 @@ using abpWorkerServiceDemo.EntityFrameworkCore;
 namespace abpWorkerServiceDemo.Migrations
 {
     [DbContext(typeof(abpWorkerServiceDemoMigrationsDbContext))]
-    partial class abpWorkerServiceDemoMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201020192650_Add_DemoEntities")]
+    partial class Add_DemoEntities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
