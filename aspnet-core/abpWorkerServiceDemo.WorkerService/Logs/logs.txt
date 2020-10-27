@@ -1008,3 +1008,571 @@ WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
 ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
 2020-10-20 22:06:58.518 +02:00 [INF] Application is shutting down...
 2020-10-20 22:06:58.520 +02:00 [INF] Shutdown...
+2020-10-27 11:13:46.167 +01:00 [INF] Start of worker service
+2020-10-27 11:13:50.413 +01:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-27 11:13:50.455 +01:00 [INF] Initialization ...
+2020-10-27 11:13:50.464 +01:00 [INF] Loaded ABP modules:
+2020-10-27 11:13:50.464 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-27 11:13:50.464 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-27 11:13:50.464 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-27 11:13:50.464 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-27 11:13:50.465 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - abpWorkerServiceDemo.EntityFrameworkCore.abpWorkerServiceDemoEntityFrameworkCoreModule
+2020-10-27 11:13:50.465 +01:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-27 11:13:50.736 +01:00 [INF] Initialized all ABP modules.
+2020-10-27 11:13:50.833 +01:00 [INF] Worker running at: "2020-10-27T11:13:50.8330172+01:00"
+2020-10-27 11:13:53.747 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:13:53.982 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-27 11:13:53.982 +01:00 [INF] Hosting environment: Development
+2020-10-27 11:13:53.982 +01:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-27 11:13:54.092 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-27 11:13:58.301 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:13:58.357 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:13:58.504 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:13:58.584 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:03.619 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:03.623 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:08.643 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:08.646 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:13.657 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:13.663 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:18.674 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:18.676 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:23.692 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:23.695 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:28.721 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:28.723 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:33.737 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:33.740 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:38.754 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:38.757 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:43.768 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:43.770 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:48.782 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:48.784 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:14:57.637 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:14:57.639 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:02.652 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:02.653 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:07.659 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:07.662 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:12.665 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:12.668 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:17.686 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:17.689 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:22.704 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:22.706 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:27.733 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:27.735 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:15:32.764 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:15:32.765 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:16:33.867 +01:00 [INF] Start of worker service
+2020-10-27 11:16:36.424 +01:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-27 11:16:36.465 +01:00 [INF] Initialization ...
+2020-10-27 11:16:36.474 +01:00 [INF] Loaded ABP modules:
+2020-10-27 11:16:36.474 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-27 11:16:36.474 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-27 11:16:36.474 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-27 11:16:36.474 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-27 11:16:36.475 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - abpWorkerServiceDemo.EntityFrameworkCore.abpWorkerServiceDemoEntityFrameworkCoreModule
+2020-10-27 11:16:36.475 +01:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-27 11:16:36.716 +01:00 [INF] Initialized all ABP modules.
+2020-10-27 11:16:39.870 +01:00 [INF] Worker running at: "2020-10-27T11:16:39.8704077+01:00"
+2020-10-27 11:16:41.519 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:41.732 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-27 11:16:41.732 +01:00 [INF] Hosting environment: Development
+2020-10-27 11:16:41.732 +01:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-27 11:16:41.878 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:41.905 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-27 11:16:43.495 +01:00 [INF] Executed DbCommand (1,551ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:16:43.498 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:43.502 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:48.646 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:48.652 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:16:53.659 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:53.661 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:16:58.679 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:16:58.684 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:17:03.692 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:17:03.694 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:17:08.707 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:17:08.710 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:17:24.192 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:17:24.196 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:20:15.597 +01:00 [INF] Start of worker service
+2020-10-27 11:20:21.694 +01:00 [INF] User profile is available. Using 'C:\Users\jerne\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-27 11:20:21.736 +01:00 [INF] Initialization ...
+2020-10-27 11:20:21.746 +01:00 [INF] Loaded ABP modules:
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Castle.AbpCastleCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Autofac.AbpAutofacModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Security.AbpSecurityModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Uow.AbpUnitOfWorkModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Data.AbpDataModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Settings.AbpSettingsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Localization.AbpLocalizationModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Validation.AbpValidationModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Features.AbpFeaturesModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainSharedModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.EventBus.AbpEventBusModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Users.AbpUsersAbstractionModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Authorization.AbpAuthorizationModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Timing.AbpTimingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Json.AbpJsonModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Threading.AbpThreadingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Auditing.AbpAuditingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Guids.AbpGuidsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Domain.AbpDddDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Http.AbpHttpAbstractionsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Application.AbpDddApplicationModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoApplicationContractsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsAbstractionsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Serialization.AbpSerializationModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Caching.AbpCachingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Users.AbpUsersDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Identity.AbpIdentityDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.IdentityServer.AbpIdentityServerDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.TextTemplating.AbpTextTemplatingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Emailing.AbpEmailingModule
+2020-10-27 11:20:21.746 +01:00 [INF] - abpWorkerServiceDemo.abpWorkerServiceDemoDomainModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Users.EntityFrameworkCore.AbpUsersEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.Identity.EntityFrameworkCore.AbpIdentityEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.IdentityServer.EntityFrameworkCore.AbpIdentityServerEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.BackgroundJobs.EntityFrameworkCore.AbpBackgroundJobsEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - abpWorkerServiceDemo.EntityFrameworkCore.abpWorkerServiceDemoEntityFrameworkCoreModule
+2020-10-27 11:20:21.746 +01:00 [INF] - abpWorkerServiceDemo.WorkerService.WorkerServiceAppModule
+2020-10-27 11:20:21.991 +01:00 [INF] Initialized all ABP modules.
+2020-10-27 11:20:24.867 +01:00 [INF] Worker running at: "2020-10-27T11:20:24.8676451+01:00"
+2020-10-27 11:20:27.168 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:27.185 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:27.383 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-27 11:20:27.383 +01:00 [INF] Hosting environment: Development
+2020-10-27 11:20:27.383 +01:00 [INF] Content root path: C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService
+2020-10-27 11:20:27.482 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-27 11:20:27.494 +01:00 [INF] Executed DbCommand (35ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:20:31.627 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:31.630 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:31.632 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:37.587 +01:00 [ERR] Worker encountered exception
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'abpWorkerServiceDemoDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   at Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.EfCoreAsyncQueryableProvider.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at Volo.Abp.Linq.AsyncQueryableExecuter.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at abpWorkerServiceDemo.Demo.DemoService.TestBreakMethod() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\src\abpWorkerServiceDemo.Domain\Demo\DemoService.cs:line 23
+   at abpWorkerServiceDemo.WorkerService.Worker.DoWork() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Worker.cs:line 28
+2020-10-27 11:20:39.674 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:39.680 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:20:44.675 +01:00 [INF] Worker running at: "2020-10-27T11:20:44.6753722+01:00"
+2020-10-27 11:20:48.383 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:48.383 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:48.387 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-27 11:20:48.387 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:20:49.645 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:49.646 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:49.654 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:51.973 +01:00 [ERR] Worker encountered exception
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'abpWorkerServiceDemoDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   at Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.EfCoreAsyncQueryableProvider.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at Volo.Abp.Linq.AsyncQueryableExecuter.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at abpWorkerServiceDemo.Demo.DemoService.TestBreakMethod() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\src\abpWorkerServiceDemo.Domain\Demo\DemoService.cs:line 23
+   at abpWorkerServiceDemo.WorkerService.Worker.DoWork() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Worker.cs:line 28
+2020-10-27 11:20:54.663 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:20:54.666 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:20:56.985 +01:00 [INF] Worker running at: "2020-10-27T11:20:56.9856310+01:00"
+2020-10-27 11:21:02.416 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:02.416 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:02.418 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-27 11:21:02.419 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:21:02.422 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:02.423 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:02.424 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:04.808 +01:00 [ERR] Worker encountered exception
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'abpWorkerServiceDemoDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   at Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.EfCoreAsyncQueryableProvider.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at Volo.Abp.Linq.AsyncQueryableExecuter.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at abpWorkerServiceDemo.Demo.DemoService.TestBreakMethod() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\src\abpWorkerServiceDemo.Domain\Demo\DemoService.cs:line 23
+   at abpWorkerServiceDemo.WorkerService.Worker.DoWork() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Worker.cs:line 28
+2020-10-27 11:21:07.444 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:07.448 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]
+2020-10-27 11:21:09.815 +01:00 [INF] Worker running at: "2020-10-27T11:21:09.8156845+01:00"
+2020-10-27 11:21:09.817 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:09.819 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [d].[Id], [d].[Name]
+FROM [demo].[DemoEntities] AS [d]
+2020-10-27 11:21:09.821 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:09.821 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:09.822 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'abpWorkerServiceDemoDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:11.415 +01:00 [ERR] Worker encountered exception
+System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
+Object name: 'abpWorkerServiceDemoDbContext'.
+   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ChangeTracker()
+   at Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGenerator.GenerateCacheKeyCore(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.SqlServer.Query.Internal.SqlServerCompiledQueryCacheKeyGenerator.GenerateCacheKey(Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.EfCoreAsyncQueryableProvider.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at Volo.Abp.Linq.AsyncQueryableExecuter.FirstOrDefaultAsync[T](IQueryable`1 queryable, CancellationToken cancellationToken)
+   at abpWorkerServiceDemo.Demo.DemoService.TestBreakMethod() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\src\abpWorkerServiceDemo.Domain\Demo\DemoService.cs:line 23
+   at abpWorkerServiceDemo.WorkerService.Worker.DoWork() in C:\Users\jerne\source\repos\nymeron\abpWorkerServiceDemo\aspnet-core\abpWorkerServiceDemo.WorkerService\Worker.cs:line 28
+2020-10-27 11:21:12.461 +01:00 [INF] Entity Framework Core 3.1.6 initialized 'BackgroundJobsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-27 11:21:12.465 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_1='?' (DbType = Int32), @__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreationTime], [a].[ExtraProperties], [a].[IsAbandoned], [a].[JobArgs], [a].[JobName], [a].[LastTryTime], [a].[NextTryTime], [a].[Priority], [a].[TryCount]
+FROM [AbpBackgroundJobs] AS [a]
+WHERE ([a].[IsAbandoned] <> CAST(1 AS bit)) AND ([a].[NextTryTime] <= @__now_0)
+ORDER BY [a].[Priority] DESC, [a].[TryCount], [a].[NextTryTime]

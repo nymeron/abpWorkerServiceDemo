@@ -1,10 +1,7 @@
 ﻿using abpWorkerServiceDemo.Demo;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
-using Volo.Abp.DependencyInjection;
 
 namespace abpWorkerServiceDemo.WorkerService
 {
@@ -23,8 +20,17 @@ namespace abpWorkerServiceDemo.WorkerService
 
         public async Task DoWork()
         {
-            _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            await _domainDemoService.TestMethod();
+            try
+            {
+                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+                await _domainDemoService.TestMethod();
+
+                await _domainDemoService.TestBreakMethod();
+            }
+            catch (Exception w)
+            {
+                _logger.LogError(w, "Worker encountered exception");
+            }
         }
     }
 }

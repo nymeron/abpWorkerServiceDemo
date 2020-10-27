@@ -1,12 +1,8 @@
-﻿using abpWorkerServiceDemo.Users;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Domain.Services;
-using Volo.Abp.Identity;
 
 namespace abpWorkerServiceDemo.Demo
 {
@@ -22,6 +18,9 @@ namespace abpWorkerServiceDemo.Demo
         {
             var entities = await _demoEntitiesRepository.GetListAsync();
         }
-
+        public async Task TestBreakMethod()
+        {           
+            var entity = await AsyncExecuter.FirstOrDefaultAsync(_demoEntitiesRepository);
+        }
     }
 }
